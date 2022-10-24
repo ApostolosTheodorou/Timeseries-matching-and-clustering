@@ -1,5 +1,7 @@
 # Timeseries matching and clustering
 
+In this project I collaborated with [Minas Dioletis] 
+
 This is a project about timeseries comparison and clustering. Given a dataset of timeseries and a query timeserie, we attempt to find and present which of the timeseries of the dataset are closer to the query timeserie. If the timeseries are relatively small, this task can be completed efficiently by the well known nearest neighbor algorithm. However, for larger timeseries, that may consist of hundreds or thousends of points, the previous approach would fail. For this reason we have implemented approximate variations of the same algorithm, using the techniques of LSH (local sensitive hashing), Hypercube (a slightly different lsh algorithm) and have also applied some filtering to the timeseries in order to reduce their size. Apart from that, the program provides the flexibility of the use of different metrics, like the euclidean or the Frechet distance, when it comes to timeseries comparison, so that the user can chose both the technique and metric that fits best to his problem. With all of the above, it is ensured that the program can handle big datasets with large dataseries with high precision and at a decent running time. Last but not least, the user is capable of clustering the timeseries in a desired number of clusters and check the quality of the clustering with the silhouette metric. 
 
 ## Compilation and Execution
